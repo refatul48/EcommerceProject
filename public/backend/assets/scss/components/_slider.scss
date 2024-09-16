@@ -1,0 +1,78 @@
+/************* feedback slider **************/
+//hero slider 
+.gshop-hero-slider {
+    .gshop-hero-single {
+        .hero-img {
+            z-index: 10;
+            transform: translateY(-50%) scale(0.5);
+            opacity: 0;
+            transition: 0.8s;
+        }
+        .tree {
+            bottom: 130px;
+            left: 25px;
+            animation: 10s upsdown_animation linear infinite;
+        }
+        .orange-1 {
+            top: 30%;
+            left: -100px;
+        }
+        .orange-2 {
+            top: 50%;
+            left: -100px;
+        }
+        &.swiper-slide-active {
+            .gshop-subtitle {
+                animation: .8s fadeInDown;
+            }
+            h1 {
+                animation: .8s theme_fadeInUp;
+            }
+            p {
+                animation: 1s theme_fadeInUp;
+            }
+            .btn-secondary {
+                animation: 1.2s theme_fadeInUp;
+            }
+            .btn-primary {
+                animation: 1.5s theme_fadeInUp;
+            }
+            .hero-img {
+                transform: translateY(-50%) scale(0.9);
+                opacity: 1;
+            }
+            .tree {
+                animation: 0.8s fadeInUp;
+            }
+            .orange-1 {
+                animation: 1s fadeInDown;
+            }
+            .orange-2 {
+                animation: 1s fadeInUp;
+            }
+        }
+        @include portrait-phone {
+            .tree, 
+            .orange-1, 
+            .orange-2 {
+                display: none;
+            }
+        }
+    }
+}
+
+.gshop-feedback-thumb-slider{
+    max-width: 360px;
+    margin: 0 auto;
+    .control-thumb {
+        opacity: 0;
+        border: 1px solid $white;
+        border-radius: 50%;
+        &.swiper-slide-visible {
+            opacity: 1;
+        }
+        &.swiper-slide-active {
+            border-color: $secondary;
+        }
+    }
+}

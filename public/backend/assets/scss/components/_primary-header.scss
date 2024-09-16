@@ -1,0 +1,55 @@
+.primary-header {
+	&--fixed {
+		position: fixed;
+	}
+	&__category-title {
+		color: hsl(var(--secondary-clr));
+	}
+	&__phn-icon {
+		background-color: hsl(var(--primary-clr) / 0.2);
+		svg {
+			stroke: hsl(var(--primary-clr));
+		}
+	}
+	&__subtotal {
+		color: hsl(var(--primary-clr)) !important;
+	}
+	&__checkout-btn {
+		background-color: hsl(var(--secondary-clr));
+		border-color: hsl(var(--secondary-clr));
+		&:hover {
+			background-color: hsl(var(--primary-clr));
+			border-color: hsl(var(--primary-clr));
+		}
+	}
+	&__menu-toggler {
+		background-color: hsl(var(--secondary-clr));
+	}
+	&__info-text {
+		color: hsl(var(--text-clr)) !important;
+		svg {
+			fill: hsl(var(--text-clr));
+			stroke: hsl(var(--text-clr));
+		}
+	}
+	.gshop-navmenu ul li a:hover {
+		color: hsl(var(--primary-clr));
+	}
+	.search-form .submit-icon-btn-secondary {
+		background-color: hsl(var(--secondary-clr));
+	}
+	.header-icon svg {
+		fill: #5d6374;
+	}
+	.apt_cart_box ul li .items-content .products_meta .price {
+		color: hsl(var(--primary-clr)) !important;
+	}
+	.topbar-info-right > li::before {
+		background-color: hsl(var(--secondary-clr));
+	}
+}
+.header-crossed {
+	.header-top {
+		background-color: hsl(var(--light-clr));
+	}
+}

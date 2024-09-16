@@ -1,0 +1,66 @@
+.checkout-radio-link {
+    color: $dark-soft-violet;
+    font-weight: 500;
+    &.border-left {
+        position: relative;
+        &::before {
+            content: ''; 
+            position: absolute;
+            left: -8px;
+            top: 50%; 
+            transform: translateY(-50%);
+            width: 1px;
+            height: 10px;
+            background-color: $dark-soft-violet;
+        }
+    }
+}
+
+.label-input-field {
+    position: relative;
+    margin-top: 8px;
+    label {
+        position: absolute;
+        left: 14px;
+        top: -12px;
+        padding: 0 8px;
+        background-color: $white;
+        font-weight: 600;
+        font-size: 15px;
+    }
+    input, 
+    textarea {
+        width: 100%;
+        padding: 16px 24px;
+        border-radius: 4px;
+        border: 1px solid $titanium-white;
+        outline: 0;
+    }
+}
+
+.tt-address-content{
+    .tt-custom-radio{
+        display: none;
+    }
+
+    .tt-address-info{
+        width: 100%;
+        cursor: pointer;
+        border: 1px solid transparent;
+    }
+    .tt-custom-radio:checked + .tt-address-info{
+        border: 1px dashed $secondary;
+        background-color: rgba($secondary, 0.1) !important;
+    }
+
+    .tt-edit-address{
+        right: 12px;
+        top: 5px;
+    }
+}
+
+
+.checkout-sidebar {
+    position: sticky;
+    top: 100px;
+}

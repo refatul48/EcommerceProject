@@ -1,0 +1,106 @@
+.service-section {
+    padding-bottom: 220px;
+    .bg-shape {
+        height: 120px;
+    }
+}
+
+.about-section {
+    padding-bottom: 170px;
+    .roll-color {
+        left: 40px;
+        bottom: 45%;
+    }
+    .roll-color-curve {
+        right: 40px;
+        bottom: 70%;
+    }
+    .onion-color {
+        right: 60px;
+        bottom: 100px;
+    }
+}
+
+/**************** faq section start *****************/
+.faq-section {
+    .frame-circle {
+        left: 100px;
+        top: 160px;
+    }
+    .leaf {
+        bottom: 90px;
+        right: 100px;
+    }
+    .cauliflower {
+        right: 90px;
+        top: 100px;
+    }
+}
+
+.feedback-slider-2 {
+    .slider-arrows {
+        button {
+            width: 48px;
+            height: 48px;
+            background-color: rgba($secondary, 0.1);
+            color: $secondary;
+            border-radius: 50%;
+            margin-left: 16px;
+            transition: $transition-base;
+            &:hover {
+                background-color: $secondary;
+                color: $white;
+            }
+        }
+    }
+}
+
+
+/*********************** service details *******************/
+.service-nav {
+    li {
+        + li {
+            margin-top: 16px;
+        }
+        a {
+            padding: 16px 24px;
+            color: $text-color;
+            background-color: $white;
+            border-radius: 4px;
+            border-left: 3px solid rgba($primary, 0.3);
+            font-weight: 700;
+            font-size: 18px;
+            display: block;
+            transition: $transition-base;
+            &:hover {
+                color: $headings-color;
+                box-shadow: $box-shadow;
+                border-color: $primary;
+            }
+            &.active {
+                background-color: $secondary;
+                color: $white;
+                border-color: $primary;
+            }
+        }
+    }
+}
+
+.download-box {
+    background-color: $bleached-spruce;
+    &::before {
+        content: '';
+        position: absolute;
+        width: 40%;
+        height: calc(100% + 2px);
+        background-color: $lumber;
+        z-index: -1;
+        right: -1px;
+        top: -1px;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 25% 100%);
+    }
+    .icon {
+        width: 62px;
+        height: 62px;
+    }
+}

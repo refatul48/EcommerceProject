@@ -1,0 +1,222 @@
+.healthcare-hero-single {
+    padding: 90px 0 90px 32px;
+    position: relative;
+    z-index: 1;
+    .left-content {
+        width: 60%;   
+    }
+    .slide-product {
+        position: absolute;
+        right: 0; 
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: -1;
+    }
+    @include screen-1400 {
+        .left-content {
+            width: 70%;
+        }
+    }
+    @include small-screen {
+        padding: 90px 0 110px 32px;
+        .left-content {
+            width: 100%;
+        }
+        .slide-product {
+            position: relative;
+            right: auto;
+            top: 0;
+            transform: translate(0);
+            margin-top: 24px;
+        }
+    }
+}
+.healthcare-hero-thumbnail-slider {
+    position: absolute;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 155px;
+    z-index: 1;
+    .thumbnail-single {
+        transform: scale(0.9);
+        opacity: 0;
+        &.swiper-slide-prev, 
+        &.swiper-slide-next {
+            opacity: 0.7;
+        }
+        &.swiper-slide-active {
+            transform: scale(1);
+            opacity: 1;
+            position: relative; 
+            z-index: 1;
+        }
+    }
+}
+
+/******************** feature section start *****************/ 
+.hm3-category-list {
+    li {
+        + li {
+            margin-top: 4px;
+        }
+        a {
+            color: $text-color;
+            &:hover {
+                color: $primary;
+            }
+        }
+    }
+}
+
+.hr-spacer {
+    width: 100%;
+    display: block;
+    height: 1px;
+    background-color: $snow-bank;
+}
+
+.hm3_product_slider_control {
+    position: absolute;
+    right: 0;
+    top: -16px;
+    width: 40px;
+    height: 40px;
+    background-color: $primary;
+    color: $white; 
+    border-radius: 4px;
+    z-index: 1;
+    display: inline-block;
+    &:hover {
+        background-color: $secondary; 
+    }
+    &.hm3_product_slider_prev {
+        right: 55px;
+    }
+}
+
+/************ product listing  section ************/
+.hm3-product-tabs {
+    .nav-tabs {
+        border-bottom: 1px solid rgba($snow-bank, 0.4);
+        gap: 16px;
+        li {
+            a {
+                color: $headings-color;
+                font-size: 18px;
+                padding: 3px 6px;
+                display: inline-block;
+                font-weight: 700;
+                position: relative;
+                &::before {
+                    content: ''; 
+                    position: absolute; 
+                    right: 0; 
+                    bottom: 0;
+                    width: 0;
+                    height: 1px; 
+                    background-color: $secondary;
+                }
+                &.active {
+                    color: $secondary;
+                    &::before {
+                        width: 100%;
+                        left: 0;
+                        right: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*********************** countdown box *******************/
+.hm3-offer-section {
+    max-height: 625px;
+    margin-top: -100px;
+    padding-top: 190px;
+}
+.offer-countdown {
+    .gs-offer-countdown-box {
+        border-radius: 12px;
+        overflow: hidden;
+        background: linear-gradient(139.32deg, #FF7C08 -7.78%, #FFFFFF 117.64%);
+        padding: 1px;
+        .bg-sky-captain {
+            background-color: $sky-captain;
+            border-radius: 12px;
+        }
+    }
+}
+
+.ofp-slider-prev {
+    left: -25px;
+}
+.ofp-slider-next {
+    right: -25px;
+}
+
+.ofp-slider-prev, 
+.ofp-slider-next {
+    width: 48px;
+    height: 48px;
+    border-radius: 4px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: $primary;
+    color: $white;
+    z-index: 1;
+    transition: $transition-base;
+    &:hover {
+        background-color: $lumber;
+        color: $secondary;
+    }
+    @include portrait-phone {
+        left: auto;
+        right: auto;
+        top: auto; 
+        position: relative;
+        transform: translate(0);
+        margin-right: 10px;
+    }
+}
+
+
+.mx-400 {
+    max-width: 400px;
+    @include small-screen {
+        max-width: 100%;
+        background-color: #4eb52921;
+    }
+}
+
+
+/*************** feedback section start *************/
+.has-banner-bottom {
+    padding-bottom: 280px;
+    @include small-screen {
+        padding-bottom: 240px;
+    }
+}
+
+/*************** about section start **************/
+.hm3-about-section {
+    padding-top: 415px;
+}
+
+
+/*************** blog section start ****************/
+.hm3-blog-card {
+    .article-contents {
+        max-width: 485px;
+        margin-top: -175px;
+        border-radius: 0 0 8px 8px;
+        box-shadow: $box-shadow; 
+    }
+    @include portrait-phone {
+        .article-contents {
+            margin-top: -40px;
+        }
+    }
+}

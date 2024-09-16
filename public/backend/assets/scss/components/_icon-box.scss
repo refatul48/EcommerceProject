@@ -1,0 +1,173 @@
+%icon_doted_shape {
+    content: ''; 
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+.gshop-animated-iconbox {
+    transition: $transition-base;
+    .animated-icon {
+        width: 80px;
+        height: 80px;
+        border: 1px dashed $primary;
+        padding: 8px;
+        &::before {
+            @extend %icon_doted_shape;
+            left: 5px; 
+            bottom: 9px; 
+            background-color: $primary;
+        }
+        &::after {
+            @extend %icon_doted_shape;
+            right: 2px; 
+            top: 12px;
+            background-color: $primary;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+    }
+    .total-count {
+        &::before {
+            @extend %icon_doted_shape;
+            background-color: $primary;
+            left: 0; 
+            top: 5px;
+        }
+    }
+    .explore-btn {
+        bottom: -15px; 
+        right: -15px;
+        width: 30px;
+        height: 30px;
+        color: $white;
+        display: inline-flex; 
+        align-items: center;
+        justify-content: center;
+        font-size: 15px;
+        transition: $transition-base;
+        opacity: 0;
+        background-color: $secondary;
+        i {
+            transform: rotate(52deg);
+        }
+    }
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: $box-shadow;
+        .explore-btn {
+            right: 0; 
+            bottom: 0; 
+            opacity: 1;
+        }
+    }
+    &.color-2 {
+        .animated-icon {
+            border-color: $pink;
+            &::before {
+                background-color: $pink;
+            }
+            &::after {
+                background-color: $pink;
+            }
+        }
+        .total-count {
+            &::before {
+                background-color: $pink;
+            }
+        }
+    }
+    &.color-3 {
+        .animated-icon {
+            border-color: $skyblue;
+            &::before {
+                background-color: $skyblue; 
+            }
+            &::after {
+                background-color: $skyblue;
+            }
+        }
+        .total-count {
+            &::before {
+                background-color: $skyblue; 
+            }
+        }
+    }
+    &.color-4 {
+        .animated-icon {
+            border-color: $secondary;
+            &::before {
+                background-color: $secondary; 
+            }
+            &::after {
+                background-color: $secondary;
+            }
+        }
+        .total-count {
+            &::before {
+                background-color: $secondary; 
+            }
+        }
+    }
+    &.color-5 {
+        .animated-icon {
+            border-color: $yellow-light;
+            &::before {
+                background-color: $yellow-light; 
+            }
+            &::after {
+                background-color: $yellow-light;
+            }
+        }
+        .total-count {
+            &::before {
+                background-color: $yellow-light; 
+            }
+        }
+    }
+}
+
+.icon-box {
+    background-color: $white;
+    transition: $transition-base;
+    .icon-color {
+        transition: $transition-base;
+    }
+    .icon-white {
+        position: absolute;
+        left: 0; 
+        top: 0;
+        transform: scale(0);
+        transition: $transition-base;
+    }
+    h5, p, a {
+        transition: $transition-base;
+    }
+    &:hover {
+        background-color: $primary;
+        box-shadow: $primary-shadow;
+        h5, p, a {
+            color: $white;
+        }
+        .icon-color {
+            transform: scale(0);
+        }
+        .icon-white {
+            transform: scale(1);
+        }
+    }
+}
+
+.horizontal-icon-box {
+    .box-icon {
+        width: 80px;
+        height: 80px;
+        box-shadow: $box-shadow;
+        width: 80px;
+        height: 80px;
+        padding: 12px;
+    }
+}

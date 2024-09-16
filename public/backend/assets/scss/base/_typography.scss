@@ -1,0 +1,22 @@
+/**
+ * Basic typography style for copy text
+ */
+body {
+  font-family: $body-font-family;
+}
+
+.tt-line-clamp{
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  &.tt-clamp-1{
+    -webkit-line-clamp: 1;
+  }
+  &.tt-clamp-2{
+    -webkit-line-clamp: 2;
+    height: 48px;
+  }
+  &.tt-clamp-3{
+    -webkit-line-clamp: 3;
+  }
+}

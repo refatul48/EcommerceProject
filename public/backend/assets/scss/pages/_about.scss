@@ -1,0 +1,135 @@
+.ab-about-section {
+    .mango {
+        right: 10%; 
+        bottom: 10px;
+    }
+}
+.ab-quote {
+    max-width: 400px;
+    display: inline-block;
+    background-color: $primary;
+    border-radius: 0 0 25px 0;
+    border: 8px solid $white;
+    margin-top: -130px;
+    h4 {
+        font-style: italic;
+        font-size: 22px;
+        span {
+            font-style: inherit;
+            padding-left: 80px;
+            &::before {
+                content: ''; 
+                position: absolute;
+                left: 40px; 
+                bottom: 4px;
+                width: 35px;
+                height: 2px;
+                background-color: $white;
+            }
+        }
+    }
+}
+
+/************* brand section start ***********/ 
+.brand-wrapper {
+    border: 2px dashed $secondary;
+    .section-title {
+        background-color: $body-bg;
+        padding: 3px 8px;
+        transform: translateY(-20px);
+        display: inline-block;
+    }
+}
+.brand-item {
+    position: relative;
+    border: 1px solid $placebo;
+    display: inline-flex; 
+    align-items: center;
+    justify-content: center;
+    height: 98px;
+    transition: $transition-base;
+    overflow: hidden;
+    img {
+        transition: $transition-base;
+        display: block;
+        filter: grayscale(1);
+        -webkit-filter: grayscale(1);
+    }
+    &:hover {
+        box-shadow: $box-shadow;
+        transform: translateY(-3px);
+        img {
+            filter: none;
+            -webkit-filter: grayscale(0);
+        }
+    }
+}
+
+/****************** team section start **************/
+.grostore-team-section {
+    padding-bottom: 295px;
+}
+.team-slider-btn {
+    width: 48px;
+    height: 48px;
+    background-color: $primary;
+    color: $white;
+    border-radius: 50%;
+    transition: $transition-base;
+    &:hover {
+        background-color: rgba($primary, 0.3); 
+        color: $primary;
+    }
+}
+
+/************************* call to action start ***********************/
+.cta-section {
+    margin-top: -170px;
+    position: relative;
+    z-index: 1;
+}
+.cta-box {
+    padding: 70px 24px;
+    background-size: cover;
+    background-position: center;
+}
+
+.exp-box {
+    width: 210px;
+    height: 210px;
+    top: 0; 
+    right: 0;
+    h2 {
+        font-size: 70px;
+        line-height: 55px;
+    }
+}
+
+/****************** about section ******************/
+.section-title-mx {
+    max-width: 450px;
+}
+
+.horizontal-icon-box {
+    .icon-wrapper {
+        z-index: 1;
+        &::before {
+            content: ''; 
+            position: absolute;
+            right: 0; 
+            bottom: 0; 
+            width: 38px;
+            height: 38px;
+            background-image: $secondary-gradient;
+            border-radius: 50%;
+            z-index: -1;
+        }
+    }
+}
+
+.hover-shadow {
+    transition: $transition-base;
+    &:hover {
+        box-shadow: $box-shadow;
+    }
+}

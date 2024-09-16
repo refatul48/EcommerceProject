@@ -1,0 +1,44 @@
+<<<<<<<<<<<<<<<<<<<----- authenticated_session_controller  ---->>>>>>>>>>>>>>>>>>>>>
+
+public function store(LoginRequest $request): RedirectResponse
+    {
+        $request->authenticate();
+
+        $request->session()->regenerate();
+
+        $url = '';
+
+        if($request->user()->role === 'admin' ){
+            $url = 'admin/dashboard';
+        } elseif($request->user()->role === 'user'){
+            $url = '/dashboard';
+        }
+
+        return redirect()->intended($url);
+    }
+
+<<<<<<<<<<<<<<<<<<<----- middleware->role  ---->>>>>>>>>>>>>>>>>>>>>
+
+public function handle(Request $request, Closure $next, string $role): Response
+    {
+      if ($request->user()->role !== $role) {
+        return redirect('dashboard');
+      }
+      return $next($request);
+    }
+
+
+<<<<<<<<<<<<<<<<<<<----- admin logout controller ---->>>>>>>>>>>>>>>>>>>>>
+
+ public function AdminLogout(Request $request): RedirectResponse
+    {
+        Auth::guard('web')->logout();
+
+        $request->session()->invalidate();
+
+        $request->session()->regenerateToken();
+
+        return redirect('/admin/login');
+    }  // end method
+
+

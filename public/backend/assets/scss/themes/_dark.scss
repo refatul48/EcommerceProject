@@ -1,0 +1,354 @@
+[data-bs-theme="dark"] {
+
+  //dark and light mood
+  .tt-theme-light {
+    display: none;
+  }
+
+  .tt-theme-dark {
+    display: block;
+  }
+
+  body {
+    background-color: $gray-900 !important;
+    color: $gray-500 !important;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4:not(.pricing .h4),
+  h5,
+  h6 {
+    color: $gray-100 !important;
+  }
+
+  .pricing .h4.deleted {
+    color: inherit;
+  }
+
+  .gshop-navmenu>ul>.has-submenu>ul li+li a {
+    border-top: none;
+  }
+
+  .bg-white,
+  .header-sticky.sticky-on,
+  .gshop-navmenu>ul>.has-submenu>ul,
+  .gshop-header-search .dropdown-menu,
+  .user-menu,
+  .apt_cart_box,
+  .offcanvas_menu,
+  .offcanvas-left-menu,
+  .meat-body,
+  .hl-collection,
+  .hl-feature-area,
+  .hl-category-card,
+  .featured-section,
+  .footer-7 {
+    background-color: $dark !important;
+  }
+
+  .bg-shade,
+  .bg-floral-white,
+  .tt-category-tag a,
+  .mobile-toolbar,
+  .meat-category-card::before,
+  .bg-dark,
+  .choose-card,
+  .meat-card,
+  .search-filter,
+  .popular-category__content,
+  .three-bg {
+    background-color: $gray-900 !important;
+  }
+
+  .gshop-navmenu ul li a,
+  .meat-card__title-link,
+  .meat-card__cart-btn,
+  .clr-alt-text,
+  .clr-heading,
+  .hl-collection-single .product-title {
+    color: $gray-500 !important;
+  }
+
+  .meat-card__title-link:hover {
+    color: $meat-primary !important;
+  }
+
+  .meat-card:hover .meat-card__cart-btn {
+    color: $light !important;
+    border-color: $meat-primary !important;
+  }
+
+  .gshop-navbar {
+    box-shadow: 2px 4px 20px 0px rgba(255, 255, 255, 0.15);
+  }
+
+  .horizontal-product-card .card-content .title,
+  .text-dark,
+  .vertical-product-card .card-content .card-title {
+    color: $white !important;
+  }
+
+  .border,
+  .vertical-product-card,
+  .mobile-toolbar-item,
+  .mobile-toolbar,
+  .mobile-menu ul li a,
+  .social-contact a,
+  .meat-category-tab,
+  .meat-card__cart-btn,
+  .hl-collection-single,
+  .hm3-product-tabs .nav-tabs,
+  .category-list__content,
+  .featured-nav {
+    border-color: $gray-800 !important;
+  }
+
+  .hl-collection-single:hover {
+    border-color: $primary !important;
+  }
+
+  .meat-category-tab.active {
+    border-color: $meat-primary !important;
+  }
+
+  .gshop-category-section,
+  .featured-products,
+  .banner-section,
+  .feedback-section,
+  .gstore-breadcrumb,
+  .brands-section,
+  .about-section,
+  .grostore-team-section {
+    img.position-absolute.start-0.bottom-0 {
+      display: none;
+    }
+
+    img.bg-shape {
+      display: none;
+    }
+  }
+
+  .header-crossed .header-top {
+    background-color: $gray-900;
+  }
+
+  .product-banner {
+    .product-banner__title {
+      color: $headings-color !important;
+    }
+  }
+
+
+  .category-list__content:hover {
+    background-color: $dark;
+  }
+
+  .hero-6,
+  .hero-7 {
+    background-image: none;
+    background: $gray-800;
+  }
+
+  .hero-6__para {
+    color: $gray-300;
+  }
+
+  .primary-header__info-text,
+  .primary-header__category-title {
+    color: $gray-500 !important;
+  }
+
+  .primary-header__category-title:hover {
+    color: $primary !important;
+  }
+
+  .featured-products.pb-200 {
+    padding-bottom: 130px;
+  }
+
+  .trending-products-area.pt-8 {
+    padding-top: 120px !important;
+  }
+
+  .gstore-breadcrumb {
+    padding: 115px 0 65px;
+  }
+
+  .subscribe_form .form-control {
+    border-color: $white;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .article-horizontal,
+  .image-box {
+    &:hover {
+      background-color: $dark !important;
+    }
+  }
+
+  .btn-outline,
+  .btn-outline-secondary,
+  .product-thumb-single,
+  .product-qty button,
+  .product-radio-btn li label,
+  .article-horizontal,
+  .image-box.image-box-border,
+  .brand-item,
+  .account-nav-menu li,
+  .apt_cart_box ul li+li {
+    border-color: $gray-800 !important;
+  }
+
+  .pt-info-tab-nav li a,
+  .hm3-product-tabs .nav-tabs li a {
+    color: $gray-500;
+  }
+
+  .listing-top-right {
+
+    .grid-btn,
+    .theme-select {
+      border-color: $gray-800 !important;
+    }
+  }
+
+  .label-input-field label,
+  .hr-spacer {
+    background-color: $gray-900;
+  }
+
+  .border-bottom,
+  .border-top {
+    border-color: $gray-800 !important;
+  }
+
+  .price-filter-widget input,
+  .search-form input,
+  .label-input-field input,
+  .label-input-field textarea,
+  .product-qty input,
+  .theme-input {
+    border-color: $gray-800 !important;
+    background-color: $gray-900;
+    color: $gray-500;
+  }
+
+  .widget-nav li a .total-count,
+  .sidebar-rating-list li .total-count,
+  .widget-title .hr-line,
+  .brand-wrapper .section-title,
+  .stock-btn {
+    background-color: $gray-900;
+  }
+
+  .timing-countdown {
+    li {
+      border-color: $gray-800 !important;
+
+      &::before {
+        background-color: $gray-900 !important;
+      }
+
+      h5 {
+        color: $gray-500;
+      }
+    }
+  }
+
+  .organic-hero-left,
+  .offer-content {
+
+    h5,
+    h1,
+    .h6,
+    h2 {
+      color: $headings-color !important;
+    }
+  }
+
+  .wishlist-table th {
+    background-color: $dark;
+    border: none;
+    color: $gray-500;
+    border-bottom: 1px solid $gray-800 !important;
+  }
+
+  .wishlist-table,
+  .order-history-table,
+  .payments-list-table table {
+    tbody {
+      tr {
+        border-color: $gray-800 !important;
+      }
+    }
+  }
+
+  .table-bordered {
+    border-color: $gray-800 !important;
+  }
+
+  .theme-slider-control span.swiper-pagination-bullet::before {
+    background-color: $gray-800 !important;
+  }
+
+  .at-header-social {
+    span {
+      color: $gray-500 !important;
+
+      &::before {
+        background-color: $gray-900;
+      }
+    }
+
+    .social-list {
+      li {
+        a {
+          color: $gray-500 !important;
+        }
+      }
+    }
+  }
+
+  .vertical-product-card .offer-badge::after {
+    background-color: $dark;
+  }
+
+  .invoice-table {
+    border-color: $gray-800;
+  }
+
+  table.footer-table {
+    tr {
+      background-color: $gray-900;
+      border: transparent;
+    }
+  }
+
+
+  // cta banner 
+  .meat-hero.bg-meat-primary {
+    background: $gray-900 !important;
+  }
+
+  .cta-box h6,
+  .banner-4 h6 {
+    color: $gray-500 !important;
+  }
+
+  .banner-4 h3,
+  .cta-box h3 {
+    color: $gray-600 !important;
+  }
+
+  .product-banner__overlay,
+  .product-banner__overlay p {
+    color: initial !important;
+  }
+
+  .product-banner__overlay h3 {
+    color: $gray-900 !important;
+  }
+}

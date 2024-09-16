@@ -1,0 +1,400 @@
+.gshop-animated-iconbox .total-count {
+    display: inline-block;
+}
+.gshop-animated-iconbox .total-count::before {
+    right: 0; 
+    top: 8px;
+}
+.vertical-product-card .offer-badge {
+    border-top-left-radius: 0;
+    border-top-right-radius: 6px; 
+}
+.vertical-product-card .offer-badge::after {
+    left: -1px;
+    right: auto;
+    clip-path: polygon(0 0, 100% 50%, 0 100%);
+}
+
+.banner-box .banner-img {
+    left: 15px;
+    right: auto;
+}
+.banner-box .banner-img-wrapper {
+    margin-right: -24px;
+} 
+
+.organic-hero::before {
+    right: auto; 
+    left: 0;
+    z-index: 1;
+}
+
+.banner-subscribe .btn {
+    border-radius: 4px 0 0 4px;
+}
+.banner-subscribe input {
+    border-radius: 0 4px 4px 0;
+}
+
+.healthcare-hero-single .slide-product {
+    left: 0; 
+    right: auto;
+}
+.hm3_product_slider_control {
+    left: 0; 
+    right: auto;
+}
+.hm3_product_slider_control.hm3_product_slider_prev {
+    left: 55px;
+    right: auto;
+}
+.subscribe_form button {
+    border-radius: 4px 0 0 4px;
+}
+
+.widget-title .hr-line::before {
+    right: 0;
+    left: auto;
+}
+.comments_list li .date {
+    left: 0; 
+    right: auto;
+}
+
+.voucher-box form button {
+    border-radius: 4px 0 0 4px;
+}
+
+.voucher-box form input {
+    border-right: 1px solid #E4E4E4;
+    border-left: 0;
+    border-radius: 0 4px 4px 0;
+}
+
+.tt-address-content .tt-edit-address {
+    left: 12px;
+    right: auto;
+}
+
+.check-password .eye {
+    left: 15px;
+    right: auto;
+}
+
+.copyCode {
+    border-right: 2px dashed $white !important;
+    border-left: 0 !important;
+}
+.coupon-row .copyBtn {
+    border-radius: 4px 0 0 4px !important;
+}
+
+.offcanvas_menu .offcanvas-close {
+    left: 25px; 
+    right: auto;
+}
+
+.gshop-navbar-right::before {
+    left: auto; 
+    right: -30px;
+}
+
+.vertical-product-card .offer-badge {
+    padding: 4px 8px 4px 14px;
+}
+
+.gshop-header-contact::before {
+    left: auto; 
+    right: -24px;
+}
+
+
+
+
+@media (min-width: 992px) {
+
+    .ps-lg-5 {
+        padding-right: 2rem !important;
+    }
+
+}
+
+.ms-7 {
+    margin-right: 3rem;
+}
+
+
+
+@media (min-width: 576px) {
+    .gap-sm-5 {
+        gap: 2rem !important;
+    }
+}
+
+.fs-sm {
+    font-size: 0.9375rem !important;
+}
+
+@media (min-width: 1400px) {
+    .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+        max-width: 1344px;
+    }
+}
+
+.fs-xxs {
+    font-size: 0.75rem !important;
+}
+
+.shadow {
+    box-shadow: 0px 14px 20px rgba(0,4,94,.04) !important;
+}
+
+.mb-5 {
+    margin-bottom: 2rem !important;
+}
+.mb-6 {
+    margin-bottom: 2.5rem !important;
+}
+.fs-xs {
+    font-size: 0.875rem !important;
+}
+
+.mt-5 {
+    margin-top: 2rem !important;
+}
+
+input {
+    outline: 0;
+}
+
+.form-control:focus {
+    color: #5d6374;
+    background-color: #fafafa;
+    border-color: rgba(0,0,0,0);
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.subscribe_form input {
+    background-color: transparent;
+    border: 0;
+}
+.subscribe_form input:focus {
+    background-color: transparent;
+}
+
+.my-8 {
+    margin-top: 3.5rem !important;
+    margin-bottom: 3.5rem !important;
+}
+
+.gshop-navmenu > ul > .has-submenu > ul {
+    left: auto;
+    right: 0;
+}
+
+.category-dropdown-box {
+    left: auto;
+    right: 0;
+    @include large-screen {
+        left: 0; 
+        right: auto;
+        transform: translateX(-50%);
+    }
+    @include medium-screen {
+        transform: translateX(-30%);
+    }
+}
+
+.gshop-header-user .user-menu-wrapper {
+    left: auto;
+    right: -15px;
+}
+
+.mb-1 {
+    margin-bottom: .25rem !important;
+}
+
+.fs-6 {
+    font-size: 1.0625rem !important;
+}
+
+.mb-7 {
+    margin-bottom: 3rem !important;
+}
+
+.py-6 {
+    padding-top: 2.5rem !important;
+    padding-bottom: 2.5rem !important;
+}
+
+.px-4 {
+    padding-right: 1.5rem !important;
+    padding-left: 1.5rem !important;
+}
+
+.g-5, .gy-5 {
+    --bs-gutter-y: 2rem;
+}
+
+@media (min-width: 1200px) {
+    .g-xl-4, .gx-xl-4 {
+        --bs-gutter-x: 1.5rem;
+    }
+}
+
+.pb-5 {
+    padding-bottom: 2rem !important;
+}
+
+.pt-7 {
+    padding-top: 3rem !important;
+}
+
+.p-5 {
+    padding: 2rem !important;
+}
+
+.text-gray {
+    --bs-text-opacity: 1;
+    color: rgba(var(--bs-gray-rgb), var(--bs-text-opacity)) !important;
+}
+
+.mt-6 {
+    margin-top: 2.5rem !important;
+}
+
+.pt-8 {
+    padding-top: 3.5rem !important;
+}
+
+.px-5 {
+    padding-right: 2rem !important;
+    padding-left: 2rem !important;
+}
+
+.py-7 {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+}
+
+.healthcare-hero-single {
+    padding: 90px 32px 90px 0;
+}
+
+.py-5 {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+}
+
+.mt-8 {
+    margin-top: 3.5rem !important;
+}
+
+.search-form input {
+    border-radius: 0 5px 5px 0;
+}
+
+.search-form .submit-icon-btn-secondary {
+    border-radius: 5px 0 0 5px;
+}
+
+.form-select {
+    background-position: right 0.75rem center;
+}
+
+.mt-7 {
+    margin-top: 3rem !important;
+}
+
+.product-qty button {
+    border-radius: 0 4px 4px 0;
+}
+
+.product-qty button.increase {
+    border-radius: 4px 0 0 4px;
+}
+
+.pt-6 {
+    padding-top: 2.5rem !important;
+}
+
+blockquote .quote-icon {
+    right: auto;
+    left: 32px;
+}
+
+.pb-7 {
+    padding-bottom: 3rem !important;
+}
+
+.icon-box .icon-white {
+    left: auto; 
+    right: 0;
+}
+
+.pb-6 {
+    padding-bottom: 2.5rem !important;
+}
+
+.pe-6 {
+    padding-left: 2.5rem !important;
+    padding-right: 0 !important;
+}
+
+.p-6 {
+    padding: 2.5rem !important;
+}
+
+.address-book-content.border-right::before {
+    right: auto;
+    left: 0;
+}
+
+.my-6 {
+    margin-top: 2.5rem !important;
+    margin-bottom: 2.5rem !important;
+}
+
+.offcanvas-left-menu .offcanvas-close {
+    right: auto;
+    left: 25px;
+}
+
+.hm3-banner-3 {
+    background-position: center center;
+}
+
+.contact-left-box {
+    background-position: left bottom;
+}
+
+.gap-6 {
+    gap: 2.5rem !important;
+}
+
+@media (min-width: 576px) {
+    .p-sm-6 {
+        padding: 2.5rem !important;
+    }
+}
+
+
+.cart-box-wrapper {
+    @include screen-1400 {
+        right: auto;
+        left: 0;
+    }
+}
+
+.topbar-info-right li::before {
+    display: none;
+}
+
+.gshop-navmenu > ul > .has-submenu > ul {
+    @include screen-1400 {
+        left: 0;
+        right: auto;
+    }
+}

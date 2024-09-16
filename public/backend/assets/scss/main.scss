@@ -1,0 +1,87 @@
+/*================
+ Template Name: GroStore - Food and Grocery eCommerce HTML Template
+ Description: Organic eCommerce html template. A responsive eCommerce template.
+ Version: 1.0
+ Author: https://themeforest.net/user/themetags
+=======================*/
+
+// 1. Configuration and helpers
+
+
+
+// 1. Configuration and helpers
+@import "abstracts/variables";
+@import "abstracts/mixins";
+@import "abstracts/functions";
+@import 'abstracts/colors';
+
+
+// 2. Vendors
+@import 'vendors/vendors';
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+
+// 3. Base stuff
+@import "base/base";
+@import "base/typography";
+@import "base/helpers";
+
+// 4. Layout-related sections
+@import "layout/header";
+@import "layout/footer";
+@import "layout/footer-mobile-menu";
+@import "layout/preloader";
+
+// 5. Components
+@import 'components/preloader';
+@import 'components/button';
+@import 'components/slider-control';
+@import 'components/icon-box';
+@import 'components/icons';
+@import 'components/product-card';
+@import 'components/banner';
+@import 'components/timing-countdown';
+@import 'components/slider';
+@import 'components/counter';
+@import 'components/blog';
+@import 'components/breadcrumb';
+@import 'components/widgets';
+@import 'components/pagination';
+@import 'components/offcanvas';
+@import 'components/accordion';
+@import 'components/image-box';
+@import 'components/order-tracking';
+@import 'components/primary-header';
+@import 'components/logo';
+
+// Theme Components
+// --------------------------------------------------
+
+// 6. Page-specific styles
+
+// 7. Themes
+@import "themes/default";
+@import "themes/dark";
+@import "themes/theme-animation";
+
+//pages
+@import 'pages/home';
+@import 'pages/shop';
+@import 'pages/cart';
+@import 'pages/checkout';
+@import 'pages/wishlist';
+@import 'pages/login';
+@import 'pages/blog';
+@import 'pages/services';
+@import 'pages/404';
+@import 'pages/contact';
+@import 'pages/team';
+@import 'pages/about';
+@import 'pages/my-account';
+@import 'pages/home-2';
+@import 'pages/home-3';
+@import 'pages/campaign';
+@import 'pages/coupon';
+@import 'pages/home-4';
+@import 'pages/home-5';
+@import 'pages/home-6';
+@import 'pages/home-7';

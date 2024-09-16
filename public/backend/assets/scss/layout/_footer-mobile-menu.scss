@@ -1,0 +1,56 @@
+//Mobile menu css
+
+.mobile-toolbar {
+  display: none;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border-top: $border-width solid $border-color;
+  background-color: $light;
+  box-shadow: $box-shadow;
+  z-index: 99;
+}
+.mobile-toolbar-item {
+  padding: $spacer * .5;
+  border-left: $border-width solid $border-color;
+  text-align: center;
+  &:first-child { border-right: 0; }
+  .badge { font-size: .625rem; }
+}
+.mobile-toolbar-icon {
+  display: block;
+  color: $body-color;
+}
+.mobile-toolbar-label {
+  display: block;
+  color: $body-color;
+  font-size: $font-size-xs;
+}
+@include media-breakpoint-down(lg) {
+  .mobile-toolbar-enabled .footer { padding-bottom: 3.5rem; }
+  .mobile-toolbar {
+    display: block;
+    & + .btn-scroll-top { bottom: $spacer + 3.5rem; }
+  }
+}
+
+.mobile-cart-icon{
+  position: relative;
+  svg{
+    position: relative;
+    z-index: -1;
+  }
+  small.badge{
+    position: absolute;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    left: 52%;
+    border-radius: 50%;
+    z-index: 1;
+  }
+
+}

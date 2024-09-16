@@ -1,0 +1,67 @@
+#progress-bar {
+    display: table;
+    width: 100%;
+    margin: 0;
+    position: relative;
+    z-index: 2;
+    table-layout: fixed;
+    padding: 0;
+    counter-reset: step;
+    li.tt-step {
+      list-style-type: none;
+      display: table-cell;
+      width: 25%;
+      float: left;
+      position: relative;
+      text-align: center;
+      &:before {
+        width: 30px;
+        height: 30px;
+        color: $body-color;
+        content: counter(step);
+        counter-increment: step;
+        line-height: 30px;
+        font-size: 14px;
+        border: 1px solid $border-color;
+        display: block;
+        text-align: center;
+        margin: 0 auto 10px auto;
+        border-radius: 50%;
+        background-color: $white;
+      }
+      &:after {
+        width: 100%;
+        height: 4px;
+        content: '';
+        position: absolute;
+        background-color: $gray-200;
+        top: 15px;
+        left: -50%;
+        z-index: -1;
+      }
+      &:first-child:after {
+        content: none;
+      }
+      &.tt-step-done{
+        color: $success;
+        &:before {
+          border-color: $success;
+          background-color: $success;
+          color: #fff;
+          content: "\f00c";
+          font-family: "FontAwesome";
+        }
+        & + li:after {
+          background-color: $success;
+        }
+      }
+      &.active{
+        color: $success;
+        &:before {
+          border-color: $success;
+          color: $success;
+          font-weight: 700;
+        }
+      }
+    }
+  }

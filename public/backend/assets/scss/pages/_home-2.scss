@@ -1,0 +1,142 @@
+/*************** hero section start ***********/
+.organic-hero {
+    padding: 120px 0;
+    margin-top: -50px;
+    .object-1 {
+        top: 20px; 
+        left: 50px;
+    }
+    .object-2 {
+        right: 25px;
+        bottom: 20px; 
+        opacity: 0.1;
+    }
+    &::before {
+        content: ''; 
+        position: absolute;
+        right: 0; 
+        top: 0; 
+        width: 30%;
+        height: 100%;
+        z-index: -1;
+        background-color: $primary;
+    }
+    &::after {
+        content: ''; 
+        position: absolute;
+        left: 0; 
+        top: 0; 
+        width: 70%;
+        height: 100%;
+        background-color: $floral-white;
+        z-index: -1;
+    }
+    .overlay-texture {
+        background-repeat: repeat;
+    }
+    @include medium-screen {
+        &::before {
+            display: none;
+        }
+    }
+}
+
+/************* offer section ***********/
+.offer-section {
+    background-size: cover;
+    background-position: center;
+    &.bg-none-small {
+        @include small-screen {
+            background-image: none !important;
+            background-color: $floral-white;
+        }
+    }   
+    
+}
+
+.offer-countdown {
+    li {
+        padding: 10px 16px;
+        min-width: 80px;
+        p {
+            margin-top: -4px;
+        }
+    }
+}
+
+/*************** team section ************/
+.bg-floral-white {
+    .team-slider-btn {
+        background-color: $secondary; 
+        color: $white;
+        &:hover {
+            background-color: rgba($secondary, 0.3);
+            color: $secondary;
+        }
+    }
+}
+.team-section {
+    padding-bottom: 295px;
+    .pumkin {
+        left: 100px; 
+        bottom: 132px;
+    }
+    .flower {
+        right: 12%;
+        bottom: 195px;
+    }
+}
+
+/***************** filter section start **************/
+.filter-section {
+    .potato {
+        right: 55px;
+        top: 150px;
+    }
+}
+.subscribe-box {
+    padding-bottom: 180px;
+    background-size: cover;
+    background-position: center bottom;
+    p {
+        color: rgba($white, 0.7);
+    }
+}
+.banner-subscribe {
+    input {
+        border-radius: 4px 0 0 4px;
+        border: 1px solid rgba($snow-bank, 0.3);
+    }
+    .btn {
+        border-radius: 0 4px 4px 0;
+    }
+}
+
+.filter-btns-underline {
+    border-bottom: 1px solid rgba($snow-bank, 0.5);
+    button {
+        font-size: 18px;
+        font-weight: 600;
+        color: $headings-color;
+        position: relative;
+        transition: $transition-base;
+        &::before {
+            content: ''; 
+            position: absolute;
+            right: 0;
+            width: 0;
+            height: 1px;
+            bottom: 0;
+            background-color: $secondary;
+            transition: $transition-base;
+        }
+        &.active {
+            color: $secondary;
+            &::before {
+                width: 100%;
+                right: auto; 
+                left: 0;
+            }
+        }
+    }
+}

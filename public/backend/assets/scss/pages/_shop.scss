@@ -1,0 +1,116 @@
+.number-count-filter {
+    input {
+        border: 1px solid $snow-bank;
+        padding: 6px 6px 6px 10px;
+        border-radius: 3px;
+        color: $text-color;
+        font-size: 14px;
+        font-weight: 500;
+        max-width: 56px;
+    }
+}
+
+.product-qty {
+    max-width: 136px;
+    input {
+        width: 52px; 
+        height: 48px;
+        padding: 12px 3px;
+        text-align: center;
+        border: 1px solid $snow-bank;
+        border-left: 0; 
+        border-right: 0;
+        font-weight: 700;
+    }
+    button {
+        width: 40px;
+        height: 48px;
+        border: 1px solid $snow-bank;
+        border-radius: 4px 0 0 4px;
+        font-weight: 700;
+        transition: $transition-base;
+        &.increase {
+            border-radius: 0 4px 4px 0;
+        }
+        &:hover {
+            background-color: rgba($snow-bank, 0.5);
+        }
+    }
+}
+
+.product-thumb-single {
+    border: 1px solid $kingli-cloud;
+    padding: 10px;
+    box-sizing: border-box;
+    &.swiper-slide-active {
+        border-color: $secondary;
+    }
+}
+
+.pt-info-tab-nav {
+    li {
+        a {
+            color: $headings-color;
+            font-weight: 700;
+            font-size: 15px;
+            display: inline-block;
+            position: relative;
+            padding: 4px 8px;
+            &::before {
+                content: ''; 
+                position: absolute;
+                right: 0;
+                bottom: -1px;
+                z-index: 1;
+                width: 0;
+                height: 1px;
+                background-color: $secondary;
+                transition: $transition-base;
+            }   
+            &.active {
+                color: $secondary;
+                &::before {
+                    width: 100%;
+                    left: 0;
+                    right: auto;
+                }
+            }
+        }
+    }
+}
+
+.product-info-table {
+    border: 1px solid $border-color;
+    td {
+        border: 1px solid $border-color;
+        padding: 10px 16px;
+    }
+}
+
+.rl-slider-btn {
+    width: 40px;
+    height: 40px;
+    background-color: $secondary;
+    color: $white;
+    border-radius: 4px;
+    transition: $transition-base;
+    &:hover {
+        background-color: $primary;
+        color: $white;
+    }
+}
+
+.tt-category-tag{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    a{
+        background: $gray-200;
+        border-radius: 50rem;
+        padding: 4px 10px;
+        &:hover{
+            background-color: rgba($primary, 0.15);
+            color: $primary !important;
+        }
+    }
+}

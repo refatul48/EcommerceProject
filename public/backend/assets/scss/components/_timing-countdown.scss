@@ -1,0 +1,22 @@
+.timing-countdown {
+    li {
+        min-width: 52px;
+        height: 52px;
+        padding: 8px;
+        background: $primary-shade-gradient;
+        &::before {
+            content: ''; 
+            position: absolute;
+            left: 1px;
+            top: 1px;
+            width: calc(100% - 2px);
+            height: calc(100% - 2px);
+            background-color: $white;
+            z-index: -1;
+            border-radius: 5px;
+        }
+        .gshop-subtitle {
+            margin-top: -5px;
+        }
+    }
+}

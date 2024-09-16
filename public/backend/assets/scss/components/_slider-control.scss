@@ -1,0 +1,31 @@
+.theme-slider-control {
+    span.swiper-pagination-bullet {
+        width: 20px;
+        height: 20px;
+        background-color: transparent; 
+        opacity: 1; 
+        border: 1px solid transparent;
+        display: inline-block;
+        position: relative;
+        margin: 0 1px !important;
+        transition: $transition-base;
+        &::before {
+            content: ''; 
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: $headings-color; 
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            transition: $transition-base;
+        }
+        &.swiper-pagination-bullet-active {
+            border-color: $secondary;
+            &::before {
+                background-color: $secondary;
+            }
+        }
+    }
+}

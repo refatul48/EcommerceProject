@@ -1,0 +1,118 @@
+.banner-box {
+    padding: 50px 24px;
+    .banner-img {
+        position: absolute;
+        right: 15px;
+        bottom: 25px;
+        z-index: -1;
+    }
+    &.banner-color-green {
+        background-color: $light-green;
+    }
+    &.banner-color-secondary {
+        background-color: $banner-secondary;
+    }
+    &.banner-lg {
+        padding: 95px 40px;
+    }
+    @include screen-1400 {
+        &.banner-lg {
+            padding: 65px 40px;
+        }
+    }
+}
+.background-banner {
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position: left bottom;
+    &.bg-start {
+        background-position: center right;
+    }
+}
+.vertical-banner {
+    padding: 40px 24px 212px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    .offer-title {
+        font-size: 32px;
+    }
+}
+.hot-badge {
+    padding: 6px 8px 6px 20px;
+    &::before {
+        content: ''; 
+        position: absolute;
+        left: -1px; 
+        top: 0;
+        width: 12px;
+        height: 100%;
+        background-color: $white; 
+        clip-path: polygon(0 0, 0% 100%, 100% 50%);
+    }
+}
+
+.linear-banner {
+    padding: 310px 48px 40px;
+    &::before {
+        content: ''; 
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        background: $black-gradient;
+        z-index: -1;
+    }
+}
+
+.banner-4 {
+    padding: 72px 40px;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position: top left;
+    .badge-clip {
+        padding: 6px 4px 12px;
+        font-size: 8px;
+        background-color: $danger;
+        clip-path: polygon(0 100%, 50% 80%, 100% 100%, 100% 0, 0 0);
+    }
+}
+
+.hm3-hero-banner {
+    padding: 76px 24px 216px;
+    background-position: center bottom;
+    background-size: cover;
+    .offer-badge {
+        padding: 6px 18px 6px 10px;
+        border-top-left-radius: 8px;
+        clip-path: polygon(100% 0, 90% 50%, 100% 100%, 0 100%, 0 0);
+    }
+}
+
+.hm3-banner-2 {
+    background-position: right bottom;
+    background-size: cover;
+    padding: 50px 24px 190px;
+    background-repeat: no-repeat;
+}
+
+.hm3-banner-3 {
+    padding: 70px 40px;
+    background-position: cover;
+    background-position: center right;
+    .banner-content {
+        width: 45%;
+    }
+    @include medium-screen {
+        background-position: left center;
+        .banner-content {
+            width: 70%;
+        }
+    }
+    @include screen-480 {
+        .banner-content {
+            width: 100%;
+        }
+    }
+}

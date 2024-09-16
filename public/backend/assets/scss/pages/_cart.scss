@@ -1,0 +1,62 @@
+.cart-table {
+    tr {
+        th {
+            text-align: center;
+            background-color: $shade-bg;
+            padding: 18px 10px;
+            color: $headings-color;
+            border-right: 2px solid $white;
+            &:last-child {
+                border-right: 0;
+            }
+        }
+        td {
+            text-align: center;
+            padding: 6px 24px;
+            &.product-title {
+                max-width: 300px;
+            }
+        }
+    }
+    tbody {
+        tr {
+            + tr {
+                border-top: 1px solid rgba($titanium-white, 0.4);
+            }
+        }
+    }
+    @include medium-screen {
+        thead {
+            display: none;
+        }
+        tbody {
+            tr {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                &:last-child {
+                    padding-bottom: 16px;
+                }
+                + tr {
+                    margin-top: 24px;
+                }
+                .product-title {
+                    text-align: center !important;
+                }
+            }
+        }
+    }
+}
+
+.voucher-box {
+    form {
+        max-width: 500px;
+        input {
+            border-right: 0;
+            border-radius: 4px 0 0 4px;
+        }
+        button {
+            border-radius: 0 4px 4px 0;
+        }
+    }
+}

@@ -1,0 +1,51 @@
+.login-section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 3rem;
+    @include screen-1400 {
+        padding: 0 15px;
+    }
+}
+
+
+.check-password {
+    position: relative;
+    .eye {
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        &.eye-slash {
+            display: none;
+        }
+    }
+}
+
+.google-btn {
+    display: flex;
+    align-items: center;
+    &:hover {
+        background-color: transparent; 
+        border-color: $primary;
+        color: $headings-color;
+    }
+}
+
+.tt-login-img{
+    border-bottom-left-radius: $border-radius-lg;
+    border-top-left-radius: $border-radius-lg;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.tt-login-col{
+    border-top-right-radius: $border-radius-lg;
+    border-bottom-right-radius: $border-radius-lg;
+    @include medium-screen{
+        border-radius: $border-radius-lg;
+    }
+}

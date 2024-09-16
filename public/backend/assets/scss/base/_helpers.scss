@@ -1,0 +1,144 @@
+.pt-80 {
+  padding-top: 80px;
+}
+.pt-100 {
+  padding-top: 100px;
+  @include small-screen {
+    padding-top: 60px;
+  }
+}
+.pt-120 {
+  padding-top: 120px;
+  @include small-screen {
+    padding-top:70px;
+  }
+}
+@include small-screen {
+  .gshop-hero.pt-120{
+    padding-top: 90px;
+  }
+}
+.pb-80 {
+  padding-bottom: 80px;
+  @include small-screen {
+    padding-bottom: 50px;
+  }
+}
+.pb-100 {
+  padding-bottom: 100px;
+  @include small-screen {
+    padding-bottom: 60px;
+  }
+}
+.ptb-100 {
+  padding: 100px 0;
+  @include small-screen {
+    padding: 60px 0;
+  }
+}
+.ptb-120 {
+  padding: 120px 0;
+  @include small-screen {
+    padding: 70px 0;
+  }
+}
+.pb-120 {
+  padding-bottom: 120px;
+  @include small-screen {
+    padding-bottom: 70px;
+  }
+}
+.pb-200 {
+  padding-bottom: 200px;
+  @include small-screen {
+    padding-bottom: 150px;
+  }
+}
+.mt-30 {
+  margin-top: 30px;
+}
+.mt--40 {
+  margin-top: -40px;
+}
+.mt--50 {
+  margin-top: -50px;
+}
+.mt--60 {
+  margin-top: -60px;
+}
+.mt--90 {
+  margin-top: -90px;
+}
+.mt-10 {
+  margin-top: 10px;
+}
+.mt-80 {
+  margin-top: 80px;
+}
+.gshop-title {
+  mark {
+    .border-line {
+      left: 0; 
+      bottom: -5px;
+    }
+  }
+}
+.z-1 {
+  z-index: 1;
+}
+.z-2 {
+  z-index: 2;
+}
+.z-5 {
+  z-index: 5;
+}
+.z--1 {
+  z-index: -1;
+}
+.gshop-subtitle {
+  font-family: $oleo-font;
+  font-weight: $font-weight-normal;
+}
+.bg-shade {
+  background-color: $shade-bg;
+}
+.rounded-btn {
+  width: 35px;
+  height: 35px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: $white;
+  color: $text-color;
+  transition: $transition-base;
+  svg {
+    path {
+      fill: $text-color;
+      transition: $transition-base;
+    }
+  }
+  &:hover {
+    background-color: $primary;
+    color: $white;
+    svg {
+      path {
+        fill: $white;
+      }
+    }
+  }
+}
+.lh-0 {
+  line-height: 0;
+}
+
+.hl-primary {
+  color: $hl-primary;
+}
+.hl-bg-primary {
+  background-color: $hl-primary;
+}
+
+.text-hl-primary {
+  color: $hl-primary;
+}

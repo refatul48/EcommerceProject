@@ -1,0 +1,185 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
+.gshop-hero {
+    margin-top: -55px;
+    .leaf-shape {
+        right: 60px;
+        top: 40px;
+        animation: 6s upsdown_animation linear infinite;
+    }
+    .mango {
+        bottom: 0; 
+        left: 100px;
+    }
+    .hero-circle {
+        animation: 25s rotate_animation linear infinite;
+    }
+    .circle-sm {
+        left: 12%; 
+        top: 240px;
+    }
+    .gshop-hero-slider-pagination {
+        left: auto;
+        right: 40px;
+        width: auto;
+        bottom: auto;
+        span {
+            display: block !important;
+        }
+    }
+    @include portrait-phone {
+        .leaf-shape {
+            right: -80px;
+        }
+        .gshop-hero-slider-pagination {
+            display: none;
+        }
+    }
+}
+.at-header-social {
+    left: -100px; 
+    top: 50%;
+    z-index: 50;
+    transform: translateY(-50%) rotate(-90deg);
+    & > span {
+        color: $headings-color;
+        position: relative; 
+        padding-left: 20px;
+        &::before {
+            content: ''; 
+            position: absolute; 
+            left: -15px; 
+            bottom: 8px;
+            width: 32px; 
+            height: 2px; 
+            background: $headings-color;
+        } 
+    }
+    .social-list {
+        li {
+            display: inline-block;
+            transform: rotate(90deg);
+            margin-right: 12px;
+            a {
+                color: $headings-color;  
+                margin: 5px;
+                &:hover {
+                    color: $secondary;
+                }
+            }
+        }
+    }
+    @include small-screen {
+        left: -115px;
+    }
+}
+
+/************************** category section start ********************/
+.gshop-category-box {
+    border-width: 2px;
+    border-style: dashed;
+    padding: 40px 32px;
+    .section-title {
+        margin-top: -55px;
+    }
+}
+
+/************** featured products start *****************/
+.featured-products {
+    .roll-1 {
+        top: 200px;
+        left: 70px;
+    }
+    .roll-2 {
+        top: 10px;
+        right: 130px;
+    }
+}
+.gshop-filter-btn-group {
+    button {
+        font-weight: 700;
+        color: $text-color;
+        transition: $transition-base;
+        font-size: 15px;
+        padding: 0 14px;
+        &.active {
+            color: $secondary;
+        }
+        &:hover {
+            color: $secondary;
+        }
+    }
+}
+
+.timing-box {
+    padding: 16px;
+    border: 2px dashed rgba($secondary, 0.4);
+}
+
+/************** trending products area ****************/
+.trending-products-area {
+    .garlic {
+        right: 100px; 
+        top: 30px;
+    }
+    .carrot {
+        bottom: 150px;
+        left: 70px;
+    }
+    .mashrom {
+        bottom: 10px;
+        right: 160px;
+    }
+    @include screen-1800 {
+        .garlic {
+            right: 25px;
+        }
+    }
+    @include screen-1600 {
+        .garlic, 
+        .mashrom, 
+        .carrot {
+            display: none;
+        }
+    }
+}
+
+/***************** feedback section start ****************/ 
+.feedback-section {
+    .fd-1 {
+        left: 0; 
+        top: 35px;
+    }
+    .fd-2 {
+        left: 10%;
+        bottom: 165px;
+    }
+    .fd-3 {
+        right: 18%; 
+        top: 100px;
+    }
+    .fd-4 {
+        right: 10%;
+        bottom: 125px;
+    }
+    .fd-5 {
+        right: 25px;
+        top: 10px;
+    }
+}
+
+.blog-section {
+    .dal-shape {
+        left: 25px; 
+        top: 0;
+    }
+    .frame-circle {
+        right: 100px; 
+        top: 0;
+    }
+}
+
+.modal-dialog {
+    max-width: 1024px;
+}

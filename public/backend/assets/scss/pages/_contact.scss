@@ -1,0 +1,68 @@
+/************* contact us ***********/
+.contact-us-section {
+    .frame {
+        left: 100px;
+        top: 120px;
+    }
+    .roll-2 {
+        bottom: 70px;
+        left: 115px;
+    }
+    .pata {
+        top: 30px;
+        right: 60px;
+    }
+    .garlic {
+        right: 13%;
+        top: 16%;
+    }
+    .roll-1 {
+        bottom: 30px;
+        right: 130px;
+    }
+    .leaf {
+        right: 60px;
+        top: 45%;
+    }
+}
+.contact-left-box {
+    padding-bottom: 225px;
+    background-repeat: no-repeat; 
+    background-position: right bottom;
+    .spacer {
+        width: calc(100% + 50px);
+        height: 1px;
+        margin-left: -25px;
+        background-color: rgba($snow-bank, 0.2);
+        display: block;
+    }
+}
+
+.contact-list {
+    li {
+        .icon {
+            width: 40px;
+            height: 40px;
+            background-color: $lumber;
+            color: $secondary;
+            font-size: 20px;
+        }
+    }
+}
+.social-links {
+    a {
+        width: 40px;
+        height: 40px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 4px;
+        border: 1px solid $white;
+        color: $white;
+        &:hover {
+            border-color: $secondary;
+            color: $white;
+            background-color: $secondary;
+        }
+    }
+}

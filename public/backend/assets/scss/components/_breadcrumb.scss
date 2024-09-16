@@ -1,0 +1,80 @@
+/**************** breadcrumb ****************/ 
+.gstore-breadcrumb {
+    padding: 115px 0 120px;
+    background-color: rgba($primary, 0.13);
+    .bg-shape {
+        bottom: -1px;
+    }
+    .pata-xs {
+        top: 100px;
+        left: 150px;
+    }
+    .frame-circle {
+        bottom: 160px;
+        left: 50px;
+    }
+    .leaf {
+        bottom: 50px;
+        left: 0;
+    }
+    .garlic {
+        left: 190px;
+        bottom: 100px;
+    }
+    .roll {
+        left: 300px;
+        top: 27%;
+    }
+    .roll-2 {
+        right: 25%;
+        top: 50%;
+    }
+    .pata-xs-2 {
+        right: 30px;
+        top: 30px;
+    }
+    .tomato-half {
+        bottom: 80px;
+        right: 15px;
+    }
+    .tomato-slice {
+        right: 6%;
+        top: 20%;
+    }
+    .cauliflower {
+        top: 50%;
+        right: 14%;
+    }
+    .leaf-gray {
+        top: 20%;
+        right: 20%;
+    }
+    @include small-screen {
+        padding: 100px 0 60px;
+        .vector-shape {
+            display: none;
+        }
+    }
+}
+
+.breadcrumb {
+    .breadcrumb-item {
+        + .breadcrumb-item {
+            &::before {
+                content: '\f101';
+                font-family: 'FontAwesome'; 
+                font-size: 12px;
+                transform: translateY(4px);
+            }
+        }
+        a {
+            color: $text-color;
+            &:hover {
+                color: $primary;
+            }
+        }
+        &.fw-bold{
+            font-weight: $font-weight-medium !important;
+        }
+    }
+}

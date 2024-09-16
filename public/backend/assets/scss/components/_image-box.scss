@@ -1,0 +1,29 @@
+.image-box {
+    transition: $transition-base;
+    &.image-box-border {
+        border: 1px solid rgba($titanium-white, 0.7);
+        border-radius: 10px;
+        .icon {
+            display: inline-block;
+            z-index: 1;
+            &::before {
+                content: ''; 
+                position: absolute;
+                right: 0; 
+                bottom: 0; 
+                width: 38px;
+                height: 38px;
+                background-image: $secondary-gradient;
+                border-radius: 50%;
+                z-index: -1;
+            }
+        }
+    }
+    &:hover {
+        background-color: $white;
+        box-shadow: $box-shadow;
+        &.image-box-border {
+            border-color: transparent;
+        }
+    }
+}

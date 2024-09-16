@@ -1,0 +1,71 @@
+.wishlist-table {
+    th {
+        text-align: center;
+        background-color: $shade-bg;
+        padding: 18px 10px;
+        color: $headings-color;
+        border-right: 2px solid $white;
+        &:last-child {
+            border-right: 0;
+        }
+    }
+    tbody {
+        tr {
+            + tr {
+                border-top: 1px solid $border-color;
+            }
+        }
+        td {
+            padding: 16px 24px;
+            &.thumbnail {
+                max-width: 110px;
+            }
+            .close-btn {
+                width: 35px;
+                height: 35px;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                background-color: $doctor;
+                color: $headings-color;
+                border-radius: 3px;
+            }
+        }
+    }
+    @include large-screen {
+        thead {
+            display: none;
+        }
+        tbody {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 32px;
+            padding-bottom: 32px;
+            tr {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                width: calc(50% - 16px);
+                td {
+                    text-align: center;
+                    &.thumbnail {
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    @include small-screen {
+        tbody {
+            tr {
+                width: 100%;
+            }
+        }
+    }
+}
+.stock-btn {
+    padding: 4px 12px;
+    background-color: $doctor;
+}

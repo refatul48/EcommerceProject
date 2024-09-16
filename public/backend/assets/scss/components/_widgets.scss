@@ -1,0 +1,193 @@
+/**************** sidebar widgets ****************/
+.widget-title {
+    .hr-line {
+        height: 2px;
+        background-color: $floral-white;
+        transform: translateY(-10px);
+        &::before {
+            content: '';
+            position: absolute;
+            width: 30px;
+            height: 2px;
+            left: 0; 
+            top: 0;
+            background-color: rgba($secondary, 0.8);
+        }
+    }
+}
+
+.search-form {
+    input {
+        border: 1px solid $snow-bank;
+        padding: 11px 16px;
+        border-radius: 5px 0 0 5px;
+        width: 100%;
+        &::placeholder {
+            color: $snow-bank;
+        }
+    }
+    .submit-icon-btn-secondary {
+        width: 48px;
+        height: 48px;
+        background-color: $secondary;
+        color: $white;
+        text-align: center;
+        line-height: 48px;
+        flex-shrink: 0;
+        border-radius: 0 5px 5px 0;
+        transition: $transition-base; 
+        &:hover {
+            background-color: $primary;
+        }
+    }
+}
+.widget-nav {
+    li {
+        a {
+            color: $text-color; 
+            .total-count {
+                min-width: 32px;
+                height: 32px;
+                padding: 4px;
+                border-radius: 5px;
+                background-color: $body-bg;   
+                display: inline-flex; 
+                align-items: center;
+                justify-content: center;   
+                transition: $transition-base;          
+            }
+            &:hover {
+                color: $primary;
+                .total-count {
+                    background-color: $primary; 
+                    color: $white;
+                }
+            }
+        }
+        + li {
+            margin-top: 16px;
+        }
+    }
+}
+
+.price-filter-widget {
+    .ui-slider-handle {
+        width: 16px; 
+        height: 16px;
+        background: $white;
+        border: 3px solid $secondary;
+        border-radius: 50%;
+        top: -7px;
+        outline: 0;
+        z-index: 1;
+    }
+    .ui-widget-content {
+        background: rgba($secondary, 0.4);
+        height: 3px;
+        border: 0;
+    }
+    .ui-slider-range {
+        background: $secondary;
+    }
+    input {
+        border: 1px solid $border-color;
+        padding: 6px 24px;
+        border-radius: 4px;
+        text-align: center;
+        width: 50%;
+    }
+}
+.sidebar-rating-list {
+    li {
+        .total-count {
+            min-width: 32px;
+            height: 32px;
+            padding: 4px;
+            border-radius: 5px;
+            background-color: $body-bg;   
+            display: inline-flex; 
+            align-items: center;
+            justify-content: center;   
+            transition: $transition-base;          
+        }
+        &:hover {
+            .total-count {
+                background-color: $primary;
+                color: $white;
+            }
+        }
+        + li {
+            margin-top: 12px;
+        }
+    }
+}
+
+.sidebar-products-list {
+    .vertical-product-card {
+        .thumbnail {
+            width: 80px;
+            padding: 8px;
+        }
+    }
+}
+
+.sidebar-info-list {
+    .icon-wrapper {
+        width: 56px;
+        height: 56px;
+        background-color: $shade-bg;
+        font-size: 24px;
+    }
+}
+
+.sidebar-table {
+    td {
+        padding: 8px 0;
+        font-weight: 500;
+    }
+}
+
+.sidebar-spacer {
+    border: 1px solid $jupitar;
+}
+
+.widget-gallery-thumb {
+    li {
+        width: calc(33% - 10px);
+        a {
+            position: absolute;
+            left: 0; 
+            top: 0; 
+            width: 100%;
+            height: 100%;
+            background-color: rgba($black, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $white;
+            transform: scale(0.7);
+            opacity: 0; 
+            visibility: hidden;
+            transition: $transition-base;
+        }
+        &:hover {
+            a {
+                transform: scale(1);
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+}
+
+.banner-widget {
+    background-size: cover;
+    border: 2px dashed $secondary;
+    border-radius: 6px;
+    padding: 60px 0;
+    .coupon-code {
+        padding: 2px 16px 4px 8px;
+        clip-path: polygon(100% 0, 90% 50%, 100% 100%, 0 100%, 0 0);
+        display: inline-block;
+    }
+}
