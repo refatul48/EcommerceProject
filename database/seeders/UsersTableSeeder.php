@@ -29,6 +29,18 @@ class UsersTableSeeder extends Seeder
                 'status' => 'active'
             ],
 
+            // admin
+
+            [
+                'name' => 'Admin',
+                'username' => 'admin',
+                'email' => 'admin@gmail.com',
+                'phone' => '+8801775282986',
+                'password' => Hash::make('123456789'),
+                'role' => 'admin',
+                'status' => 'active'
+            ],
+
             // user
 
 
