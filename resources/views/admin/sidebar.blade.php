@@ -21,7 +21,7 @@
             </li>
 
             <li class="nav-item mt-1">
-                <a href=""
+                <a href=" {{route('customer')}} "
                     class="nav-link">
                     <i class="link-icon" data-feather="user"></i>
                     <span class="link-title">Customers</span>

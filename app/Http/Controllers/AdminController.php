@@ -85,5 +85,10 @@ class AdminController extends Controller
     } //  end method
 
 
+    // Customer ar controller
+   public function CustomerAll()
+   {
+    return view('admin.customer.customer');
+   }
 
 }
